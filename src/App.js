@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Icon from './Icon';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      style={{
+        background: 'black',
+        height: '100vh',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
+      <Icon name="arrow-down" color="red" size={35} />
+
+      <Icon name="arrow-left" color="red" size={35} />
+
+      <Icon name="arrow-right" color="white" size={35} />
+
+      <Icon name="arrow-right" color="blue" size={35} />
     </div>
   );
 }
